@@ -1,0 +1,62 @@
+* {
+  margin: auto;
+}
+
+header{
+  display: flex;
+}
+
+body {
+  background-color: #212529;
+  font-family: 'Poppins';
+}
+
+main {
+  font-family: 'Inter';
+}
+
+li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+}
+
+.cajaMediana {
+  background-color: #2b2c2e;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: #FFB742;
+}
+
+button {
+  background-color: #FFB742;
+  color: : black;
+  font-weight: 800;
+  borde-radius: 20px;
+  height: 54px;
+  width: 121px;
+  left: 1271px;
+  top: 23.060546875px;
+  border-radius: 50px;
+  padding: 12px, 26px, 12px, 26px;
+  main: 20px;
+}
+
+section{
+  display: flex;
+}
+
+footer {
+  display: flex;
+  background-color: #1C1C1C;
+}
