@@ -23,7 +23,7 @@
     <header>
         <img src="./img/logo.png">
         <nav>
-            <ul>
+            <ul class="listaHeader">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./experience.html">Experience</a></li>
@@ -34,68 +34,60 @@
     </header>
 
     <main>
-        <h4>Hi, I am Lina M Herrera👋</h4>
+        <h2>Hi, I am <span id="miNombreAmarillo">Lina M Herrera👋</span></h2>
         <h1>Software development student</h1>
         <h5>I will do my best all time</h5>
-        <img src="./img/FOTO LINA MARIA HERRERA OCAMPO.jpg">
+        <img class="Mifoto" src="./img/FOTO LINA MARIA HERRERA OCAMPO.jpg">
     </main>
 
     <section>
         <div class="cajaMediana">
-
-            <img src="./img/emblem 1logo2.svg">
-            <span>12+</span>
+            <img class="imaLogo" src="./img/emblem 1logo2.svg">
+            <span class="anos">12+</span>
             <span>Years of Experience</span>
         </div>
         <div class="cajaMediana">
-            <img src="./img/Group 6logo3.svg">
-            <span>100+</span>
-            <span>Complete Projects</span>
+            <img img class="imaLogo" src="./img/Group 6logo3.svg">
+            <span class="anos">100+</span>
+            <span>Completed Projects</span>
         </div>
         <div class="cajaMediana">
-            <img src="./img/happylogo3.svg">
-            <span>50+</span>
+            <img class="imaLogo" src="./img/happylogo3.svg">
+            <span class="anos">50+</span>
             <span>Happy Clients</span>
         </div>
-
     </section>
 
     <footer>
         <div>
-            <h2>Lina Herrera.</h2>
-            <h4>Software development Student</h4>
+            <span id="miNombreAmarilloAbajo"> Lina Herrera.</span>
+            <span>Software development Student</span>
         </div>
         <div>
-            <h3>Useful Links</h3>
+            <span Class="TitulosAbajo">Useful Links</span>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="experience.html">Experience</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>>
-                </li>
+                <li class="enBloque"><a href="index.html">Home</a></li>
+                <li class="enBloque"><a href="about.html">About</a></li>
+                <li class="enBloque"><a href="experience.html">Experience</a></li>
+                <li class="enBloque"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div>
-            <h3>Social Media</h3>
+            <span Class="TitulosAbajo"> Social Media</span>
             <ul>
-                <li>Linkedin</li>
-                <li>Github</li>
-                <li>Instagram</li>
-            </ul>
+                <li class="enBloque"><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BsmC1IgNaTWeO3tIfkH%2B%2FeQ%3D%3D"target="_blank">Linkedin</a></li>
+                <li class="enBloque"><a href="https://github.com/lherrer5"target="_blank">Github</a></li>
+                <li class="enBloque"><a href="https://www.facebook.com/linamaria.h.o/"target="_blank">Facebook</a></li>
+            </ul>   
         </div>
         <div>
-            <h3>Hire Me</h3>
-            <h5>Enter your email to get my portafolio and CV.</h5>
-            <button>
-                Your email address
-            </button>
+            <span class= "tituloHire">  Hire Me </span>
+            <span class="enBloque">Enter your email to get my portafolio and CV.</span>
+            <br>
+            <form action="/enviar-cv">
+                <input  id= "inputFoot" class="form" type="text" placeholder="Your email address">
+                <button id= "buttonFoot" class="send" type="submit"><img src="./img/Vector.svg"></button>
+            </form>  
         </div>
 
     </footer>

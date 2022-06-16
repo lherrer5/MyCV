@@ -1,62 +1,296 @@
 * {
   margin: auto;
+  margin: 0px;
 }
 
 header{
   display: flex;
+  justify-content: space-between;
+}
+
+.listaHeader{
+  display: flex;
+  font-size: 18px;
 }
 
 body {
+  padding: 10px;
   background-color: #212529;
   font-family: 'Poppins';
-}
-
-main {
-  font-family: 'Inter';
+  color: white;
+  justify-content: center;
 }
 
 li {
   display: inline;
-  list-style: none;
+  list-style-type: none;
   margin: 10px;
-}
-
-.cajaMediana {
-  background-color: #2b2c2e;
 }
 
 a {
   text-decoration: none;
-}
-
-a:visited,
-a:link {
   color: white;
 }
 
-a:hover {
+a:visited {
+  color: white;
+}
+
+a:hover, a:link {
   color: #FFB742;
 }
 
-button {
-  background-color: #FFB742;
-  color: : black;
-  font-weight: 800;
-  borde-radius: 20px;
-  height: 54px;
-  width: 121px;
-  left: 1271px;
-  top: 23.060546875px;
-  border-radius: 50px;
-  padding: 12px, 26px, 12px, 26px;
-  main: 20px;
+body button {
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border-style: none;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  background-color: #ffB742;
+}
+
+.cajaMediana {
+  background-color: #292b2E;
+  text-align: center;
+  height: 90px;
+  width: 1000px;
+  margin: 24px;
+}
+
+main {
+  font-family: 'Inter';
+  text-align: center;
+  margin: 30px 10px;
+}
+
+h1, h2 {
+  margin: 20px;
+}
+
+.Mifoto {
+  height: 170px;
+  width: 140px;
+  left: nullpx;
+  top: nullpx;
+  margin: 20px;
+  border-radius: 50%;
+  left: calc(50% - 166px/2);
+  top: calc(50% - 160px/2 - 0.36px);
+}
+
+.imaLogo{
+  background-color: white;
+  border-radius: 50%;
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+
+.anos{
+  color:#FFB742;
+  padding-left: 170px;
+  font-size: 27px;
+  text-align: center;
+  display: flex;
+  font-family: 'Poppins';
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 section{
   display: flex;
+  height: 140px;
+  width: 1500px;
+  margin: 0px 5px 0px 5px;
+}
+
+h2{ 
+  font-size: 32px;
+}
+
+#miNombreAmarillo{
+  color:#FFB742;
+}
+
+h1{
+  font-size: 36px;
 }
 
 footer {
   display: flex;
   background-color: #1C1C1C;
+  text-align: center;
+  justify-content: space-between;
+}
+
+footer div ul{
+  flex-direction: column;
+}
+
+footer li{
+  margin: 2px;
+}
+
+.enBloque{
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  padding-left: 0px;
+  margin-left: 0%;
+}
+
+#miNombreAmarilloAbajo{
+  color:#FFB742;
+  display: flex;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 100%;
+  padding-bottom: 20px;
+}
+
+.TitulosAbajo{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  padding-left: 35px;
+}
+
+.tituloHire{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  padding-right: 400px;
+  margin-right: 100px;
+}
+
+.form{
+border-radius: 30px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 36px;
+background-color: #292b2E;
+border-color: none;
+padding-right: 200px;
+margin-right: 100px;
+}
+
+.send{
+  height: 50px;
+  width: 50px;
+  border-radius: 48px;  
+  background-color: #ffB742;
+  flex-direction: row;
+} 
+
+.mainAbout{
+  display: flex;
+  font-family: 'Inter';
+  text-align: left;
+  margin: 80px 30px;
+}
+
+.sectionAbout{
+  display: block;
+  height: 140px;
+  width: 1500px;
+  margin: 0px 5px 0px 5px; 
+}
+
+p{
+  font-family: 'Poppins';
+  text-align: justify;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  margin-left: 2%;
+  margin-right: 35%;
+}
+
+.MifotoAbout {
+  height: 270px;
+  width: 140px;
+  margin: 0px 100px;
+}
+
+.titleAbout{
+border-radius: 30px;
+color: #FFB742;
+font-family: 'Poppins';
+font-style: bold;
+font-size: 18px;
+background-color: #292b2E;
+padding: 6px 25px;
+gap: 10px;
+position: absolute;
+width: 148px;
+height: 42px;
+left: 400px;
+top: 100px;
+}
+
+.titleExpe{
+border-radius: 30px;
+color: #FFB742;
+font-family: 'Poppins';
+font-style: bold;
+font-size: 18px;
+background-color: #292b2E;
+padding: 5px 5px;
+gap: 10px;
+position: absolute;
+width: 148px;
+height: 42px;
+left: 700px;
+top: 100px;
+}
+
+.divExpe{
+  background-color: white;
+  color: black;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.datosContact{
+  display: flex;
+}
+
+#Inputcon{
+  border-radius: 0%;
+  border-bottom-color: white;
+  text-align: left; 
+  font-family: 'Poppins';
+  font-style: bold;
+  font-size: 40px;
+  line-height: 36px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#inputFoot{
+  padding: 0%;
+  margin: 0%;
+}
+
+#buttonFoot{
+padding: 0%;
 }
