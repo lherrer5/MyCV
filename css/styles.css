@@ -10,7 +10,7 @@ header{
 
 .listaHeader{
   display: flex;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 body {
@@ -49,7 +49,10 @@ body button {
   height: 40px;
   padding: 5px;
   background-color: #ffB742;
-}
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: #212529;
+  }
 
 .cajaMediana {
   background-color: #292b2E;
@@ -101,9 +104,8 @@ h1, h2 {
 
 section{
   display: flex;
-  height: 140px;
-  width: 1500px;
-  margin: 0px 5px 0px 5px;
+justify-content: space-between;
+  margin: 120px;
 }
 
 h2{ 
@@ -176,15 +178,13 @@ footer li{
 
 .form{
 border-radius: 30px;
+border: opx;
 font-family: 'Poppins';
-font-style: normal;
 font-weight: 500;
-font-size: 16px;
+font-size: 20px;
 line-height: 36px;
 background-color: #292b2E;
 border-color: none;
-padding-right: 200px;
-margin-right: 100px;
 }
 
 .send{
@@ -200,6 +200,7 @@ margin-right: 100px;
   font-family: 'Inter';
   text-align: left;
   margin: 80px 30px;
+  justify-content: space-between;
 }
 
 .sectionAbout{
@@ -207,6 +208,7 @@ margin-right: 100px;
   height: 140px;
   width: 1500px;
   margin: 0px 5px 0px 5px; 
+  justify-content: space-between;
 }
 
 p{
@@ -222,12 +224,16 @@ p{
 
 .MifotoAbout {
   height: 270px;
-  width: 140px;
+  width: 340px;
   margin: 0px 100px;
 }
 
+
 .titleAbout{
 border-radius: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
 color: #FFB742;
 font-family: 'Poppins';
 font-style: bold;
@@ -238,7 +244,7 @@ gap: 10px;
 position: absolute;
 width: 148px;
 height: 42px;
-left: 400px;
+left: 540px;
 top: 100px;
 }
 
@@ -256,6 +262,7 @@ width: 148px;
 height: 42px;
 left: 700px;
 top: 100px;
+justify-content: space-between;
 }
 
 .divExpe{
@@ -274,9 +281,11 @@ top: 100px;
   display: flex;
 }
 
-#Inputcon{
-  border-radius: 0%;
+.Inputcon{
+  border-right: 0px;
   border-bottom-color: white;
+  background-color: #292b2E;
+  color: white;
   text-align: left; 
   font-family: 'Poppins';
   font-style: bold;
@@ -289,8 +298,13 @@ top: 100px;
 #inputFoot{
   padding: 0%;
   margin: 0%;
+  border: 0px;
+  width: 400px;
+  height: 60px;
 }
 
 #buttonFoot{
 padding: 0%;
+margin-right: 120px;
 }
+
