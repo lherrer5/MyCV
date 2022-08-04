@@ -3,12 +3,12 @@
   margin: 0px;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
 }
 
-.listaHeader{
+.listaHeader {
   display: flex;
   font-size: 22px;
 }
@@ -16,7 +16,7 @@ header{
 body {
   padding: 10px;
   background-color: #212529;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: white;
   justify-content: center;
 }
@@ -36,8 +36,9 @@ a:visited {
   color: white;
 }
 
-a:hover, a:link {
-  color: #FFB742;
+a:hover,
+a:link {
+  color: #ffb742;
 }
 
 body button {
@@ -48,14 +49,14 @@ body button {
   width: 100px;
   height: 40px;
   padding: 5px;
-  background-color: #ffB742;
-  font-family: 'Poppins';
+  background-color: #ffb742;
+  font-family: "Poppins";
   font-size: 15px;
   color: #212529;
-  }
+}
 
 .cajaMediana {
-  background-color: #292b2E;
+  background-color: #292b2e;
   text-align: center;
   height: 90px;
   width: 1000px;
@@ -63,12 +64,13 @@ body button {
 }
 
 main {
-  font-family: 'Inter';
+  font-family: "Inter";
   text-align: center;
   margin: 30px 10px;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 20px;
 }
 
@@ -79,11 +81,11 @@ h1, h2 {
   top: nullpx;
   margin: 20px;
   border-radius: 50%;
-  left: calc(50% - 166px/2);
-  top: calc(50% - 160px/2 - 0.36px);
+  left: calc(50% - 166px / 2);
+  top: calc(50% - 160px / 2 - 0.36px);
 }
 
-.imaLogo{
+.imaLogo {
   background-color: white;
   border-radius: 50%;
   float: left;
@@ -91,53 +93,53 @@ h1, h2 {
   width: 60px;
 }
 
-.anos{
-  color:#FFB742;
+.anos {
+  color: #ffb742;
   padding-left: 170px;
   font-size: 27px;
   text-align: center;
   display: flex;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   vertical-align: middle;
 }
 
-section{
+section {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   margin: 120px;
 }
 
-h2{ 
+h2 {
   font-size: 32px;
 }
 
-#miNombreAmarillo{
-  color:#FFB742;
+#miNombreAmarillo {
+  color: #ffb742;
 }
 
-h1{
+h1 {
   font-size: 36px;
 }
 
 footer {
   display: flex;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
   text-align: center;
   justify-content: space-between;
 }
 
-footer div ul{
+footer div ul {
   flex-direction: column;
 }
 
-footer li{
+footer li {
   margin: 2px;
 }
 
-.enBloque{
+.enBloque {
   display: flex;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -146,10 +148,10 @@ footer li{
   margin-left: 0%;
 }
 
-#miNombreAmarilloAbajo{
-  color:#FFB742;
+#miNombreAmarilloAbajo {
+  color: #ffb742;
   display: flex;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -157,8 +159,8 @@ footer li{
   padding-bottom: 20px;
 }
 
-.TitulosAbajo{
-  font-family: 'Poppins';
+.TitulosAbajo {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -166,8 +168,8 @@ footer li{
   padding-left: 35px;
 }
 
-.tituloHire{
-  font-family: 'Poppins';
+.tituloHire {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -176,43 +178,43 @@ footer li{
   margin-right: 100px;
 }
 
-.form{
-border-radius: 30px;
-border: opx;
-font-family: 'Poppins';
-font-weight: 500;
-font-size: 20px;
-line-height: 36px;
-background-color: #292b2E;
-border-color: none;
+.form {
+  border-radius: 30px;
+  border: opx;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #292b2e;
+  border-color: none;
 }
 
-.send{
+.send {
   height: 50px;
   width: 50px;
-  border-radius: 48px;  
-  background-color: #ffB742;
+  border-radius: 48px;
+  background-color: #ffb742;
   flex-direction: row;
-} 
+}
 
-.mainAbout{
+.mainAbout {
   display: flex;
-  font-family: 'Inter';
+  font-family: "Inter";
   text-align: left;
   margin: 80px 30px;
   justify-content: space-between;
 }
 
-.sectionAbout{
+.sectionAbout {
   display: block;
   height: 140px;
   width: 1500px;
-  margin: 0px 5px 0px 5px; 
+  margin: 0px 5px 0px 5px;
   justify-content: space-between;
 }
 
-p{
-  font-family: 'Poppins';
+p {
+  font-family: "Poppins";
   text-align: justify;
   font-style: normal;
   font-weight: 500;
@@ -228,47 +230,44 @@ p{
   margin: 0px 100px;
 }
 
-
-.titleAbout{
-border-radius: 30px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #FFB742;
-font-family: 'Poppins';
-font-style: bold;
-font-size: 18px;
-background-color: #292b2E;
-padding: 6px 25px;
-gap: 10px;
-position: absolute;
-width: 148px;
-height: 42px;
-left: 540px;
-top: 100px;
+.titleAbout {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb742;
+  font-family: "Poppins";
+  font-style: bold;
+  font-size: 18px;
+  background-color: #292b2e;
+  padding: 6px 25px;
+  gap: 10px;
+  position: absolute;
+  width: 148px;
+  height: 42px;
+  left: 540px;
+  top: 100px;
 }
 
-.titleExpe{
-border-radius: 30px;
-color: #FFB742;
-font-family: 'Poppins';
-font-style: bold;
-font-size: 18px;
-background-color: #292b2E;
-padding: 5px 5px;
-gap: 10px;
-position: absolute;
-width: 148px;
-height: 42px;
-left: 700px;
-top: 100px;
-justify-content: space-between;
+.titleExpe {
+  border-radius: 50px;
+  color: #ffb742;
+  font-family: "Poppins";
+  font-style: bold;
+  font-size: 18px;
+  background-color: #292b2e;
+  padding: 10px 5px;
+  width: 141px;
+  height: 30px;
+  margin-left: 535px;
+  margin-bottom: 100px;
+  align-items: center;
 }
 
-.divExpe{
+.divExpe {
   background-color: white;
   color: black;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -277,25 +276,36 @@ justify-content: space-between;
   margin-right: 10%;
 }
 
-.datosContact{
+.datosContact {
   display: flex;
 }
 
-.Inputcon{
+.Inputcon {
   border-right: 0px;
   border-bottom-color: white;
-  background-color: #292b2E;
+  background-color: #292b2e;
   color: white;
-  text-align: left; 
-  font-family: 'Poppins';
+  text-align: left;
+  font-family: "Poppins";
   font-style: bold;
   font-size: 40px;
   line-height: 36px;
   margin-left: 25%;
   margin-right: 25%;
+  border-left-style: none;
+  border-top-style: none;
 }
 
-#inputFoot{
+input::placeholder{
+color: white;
+}
+
+footer input::placeholder{
+  color: white;
+  padding-left: 50px;
+  }
+
+#inputFoot {
   padding: 0%;
   margin: 0%;
   border: 0px;
@@ -303,8 +313,12 @@ justify-content: space-between;
   height: 60px;
 }
 
-#buttonFoot{
-padding: 0%;
-margin-right: 120px;
+#buttonFoot {
+  padding: 0%;
+  margin-right: 120px;
 }
 
+.mainCont {
+  padding: 80px;
+  margin: 60px;
+}
