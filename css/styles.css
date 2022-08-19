@@ -32,12 +32,12 @@ a {
   color: white;
 }
 
-a:visited {
+a:visited, 
+a:link {
   color: white;
 }
 
-a:hover,
-a:link {
+a:hover {
   color: #ffb742;
 }
 
@@ -48,10 +48,9 @@ body button {
   border-style: none;
   width: 100px;
   height: 40px;
-  padding: 5px;
   background-color: #ffb742;
   font-family: "Poppins";
-  font-size: 15px;
+  font-size: 10px;
   color: #212529;
 }
 
@@ -259,8 +258,8 @@ p {
   padding: 10px 5px;
   width: 141px;
   height: 30px;
-  margin-left: 535px;
-  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-bottom: 50px;
   align-items: center;
 }
 
@@ -270,14 +269,16 @@ p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 25px;
   line-height: 36px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 5%;
 }
 
 .datosContact {
   display: flex;
+}
+.sendContact{
+  font-size: 20px;
 }
 
 .Inputcon {
@@ -290,7 +291,6 @@ p {
   font-style: bold;
   font-size: 40px;
   line-height: 36px;
-  margin-left: 25%;
   margin-right: 25%;
   border-left-style: none;
   border-top-style: none;
@@ -318,7 +318,98 @@ footer input::placeholder{
   margin-right: 120px;
 }
 
-.mainCont {
-  padding: 80px;
-  margin: 60px;
+/* .mainCont {
+  padding: 50px;
+  margin: 30px;
+} */
+
+/* DE ANDRES */
+/* .form input {
+  border-radius: 50px;
+  height: 50px;
+  margin: 10px;
+} */
+
+.contacto {
+  color: #ffb742;
+  border-radius: 50px;
+  background-color: #45423d;
+  display: inline-block;
+  margin: 0px;
+  padding-top: 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
 }
+
+.formulario {
+  background-color: none;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  padding: 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+/* .contenedordelform {
+  margin-top: 6em;
+  display: grid;
+  row-gap: 200px;
+}
+
+.grupoform {
+  position: relative;
+} */
+
+.sectionChiste {
+  background-color: #ffffff;
+  color: #212529;
+  border-radius: 5px;
+  height: 100px;
+  width: 450px;
+  padding: 15px;
+  margin: 35px;
+}
+
+.pChiste{
+  font-weight: 30px;
+  padding-right: 0px;
+  margin-right: 0px;
+  font-size: 30px;
+}
+.unomas{
+  background-color: #ffb742;
+  color: black;
+  font-size: 15px;
+  border-radius: 15px;
+  font-style:initial;
+  margin-bottom: 50px;
+}
+
+/* .forminput {
+  width: 100%;
+  background: none;
+  color: #ffffff;
+  font-size: 2em;
+  padding: 0.6em 0.3;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7b7b7b;
+  font-family: "Roboto", sans-serif;
+} */
+
+
+/* .formenviar {
+  border-radius: 50px;
+  padding: 12px;
+  background-color: #ffb742;
+  display: inline-block;
+  margin: 0px;
+  width: 120px;
+  height: 60px;
+  font-size: 2rem;
+}
+
+.formulario .contenedordelform .grupoform ::placeholder{
+  color: #ffffff;
+} */

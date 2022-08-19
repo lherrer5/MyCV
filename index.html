@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <img src="./img/logo.png">
+        <img src="./img/logo.png" />
         <nav>
             <ul class="listaHeader">
                 <li><a href="./index.html">Home</a></li>
@@ -30,13 +30,17 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button>Hire me</button>
+        <button>DARK O LIGHT</button>
     </header>
-
     <main>
+        <script>
+            let texto="Hi, Welcome!"
+            const hablar=(texto)=>speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
+            hablar(texto);
+        </script>
         <h2>Hi, I am <span id="miNombreAmarillo">Lina M Herrera👋</span></h2>
         <h1>Software development student</h1>
-        <h5>I will do my best all time</h5>
+        <h4>I will do my best all time</h4>
         <img class="Mifoto" src="./img/FOTO LINA MARIA HERRERA OCAMPO.jpg">
     </main>
 
@@ -89,8 +93,8 @@
                 <button id= "buttonFoot" class="send" type="submit"><img src="./img/Vector.svg"></button>
             </form>  
         </div>
-
     </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
