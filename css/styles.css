@@ -33,6 +33,11 @@ a {
   color: white;
 }
 
+#pAExpe {
+  text-decoration: none;
+  color: orange;
+}
+
 a:visited, 
 a:link {
   color: white;
@@ -71,8 +76,7 @@ main {
 
 h1,
 h2 {
-  margin: 20px;
-  font-family: 'Roboto';
+  margin: 20px;;
 }
 
 .Mifoto {
@@ -168,6 +172,7 @@ footer li {
   font-size: 22px;
   line-height: 32px;
   padding-left: 35px;
+  color: white;
 }
 
 .tituloHire {
@@ -276,31 +281,58 @@ p {
 
 #box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0%;
 }
-
 
 .box2{
   text-align: center;
 }
 
+.small-box {
+  width: 570px;
+  height: 450px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin: 10px;
+}
+
+.flex-smallbox {
+  display: flex;
+
+}
+
+.logoExpe{
+  width: 100px;
+  height: 70px;
+  margin: 0%;
+  padding-left: 200px;
+}
 .divExpe {
   display: flex;
   justify-content: space-between;
-  flex-basis: auto;
+}
+
+.titlEpExpe{
+  background-color: white;
+  color: black;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  margin: 0%;
+  padding: 20px;
 }
 
 .pExpe{
   background-color: white;
   color: black;
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 36px;
-  width: 80%;
-  height: 80%; 
+  font-size: 20px;
   text-align: justify;
-  margin: 5%;
+  margin: 0%;
+  padding: 1%;
 }
 
 .datosContact {
@@ -345,6 +377,10 @@ footer input::placeholder{
 #buttonFoot {
   padding: 0%;
   margin-right: 120px;
+}
+
+#letraBlanca{
+  color: white;
 }
 
 /* .mainCont {
@@ -451,4 +487,22 @@ footer input::placeholder{
   font-family: "Poppins";
   color: black;
   justify-content: center;
+}
+
+.titlesLight{
+  color: white;
+}
+
+.change-mode-small-box{
+  width: 570px;
+  height: 450px;
+  border-radius: 10px;
+  background-color:#212529;
+  color: white;
+  margin: 10px;
+}
+
+.change-mode-a{
+  text-decoration: none;
+  color: black;
 }

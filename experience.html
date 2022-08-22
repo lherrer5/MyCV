@@ -32,31 +32,68 @@
         </nav>
         <button id="botonMando">DARK O LIGHT</button>
     </header>
-    
-    <main>
-        <h4 class="titleExpe">EXPERIENCE</h4>
-        <br>
-        <br>
-        <h1>Practice makes Better</h1>
-        <div class="divExpe">
-            <div class="divExpe">
-                <title style="color: white">From administrator to developer</title>
-                <!-- <p class="pExpe">From administrator to developer</p> -->
-                <p class="pExpe">
-                Business administrator in the process of changing career to software developer. I put my best in everything I do. I am energic, proactive, recursive, responsible, empathic, detail oriented and I work very well in a team. If you hire me, you will never regret it.
-                </p> 
-            </div>
-            <div class="divExpe"> 
-                <p class="pExpe">Hello, World! 
-                    I’ve completed a 32 hour training designed by Women Who Code Medellin and this website is the result of each lesson. I used HTML5, CSS3 and JS and I also called an APi so you can have a laugh. Take a look at my Contact page here to enjoy it!
-                </p> 
-            <!-- </div> -->
+
+    <main id="mainExpe">
+        <div class="box2">
+            <h4 class="titleExpe">EXPERIENCE</h4>
+            <h1>Practice makes Better</h1>
         </div>
+            <section id="box">
+                <div class="small-box">
+                    <div class="flex-smallbox">
+                        <div class="divExpe">
+                            <p class="titlEpExpe"> Hello, World!
+                            </p>
+                            <img class="logoExpe" src="/img/WWCode_Medellin_Black 3.png" alt="logowwCode">
+                        </div>
+                        
+                        <!-- <p class="pExpe"><a href="https://www.instagram.com/wwcodemedellin">Women Who Code Medellín</a></p> -->
+                        
+                    </div>
+                    <p class="pExpe"><a id="pAExpe" href="https://www.instagram.com/wwcodemedellin" target="_blank"> Women Who Code Medellín</a></p>
+                    <p class="pExpe">
+                        I’ve completed a 32 hour training designed by Women Who Code Medellin and this website is the
+                        result of each lesson. I used HTML5, CSS3 and JS and I also called an APi so you can have a
+                        laugh. Take a look at my Contact page
+                    <span><a id="pAExpe" href="./contact.html">here </a></span> to enjoy it!
+                    </p>
+                </div>
+
+                <div class="small-box">
+                    <div class="flex-smallbox">
+                        <div class="divExpe">
+                            <p class="titlEpExpe"> Rick & Morty</p>
+                            <img class="logoExpe" src="/img/WWCode_Medellin_Black 3.png" alt="logowwCode">
+                        </div>
+                    </div>
+                    <p class="pExpe"><a id="pAExpe" href="https://www.instagram.com/wwcodemedellin" target="_blank"> Women Who Code Medellín</a></p>
+                    <p class="pExpe">
+                        Once my CV was ready, I was able to go a little bit further. I started a must have project for
+                        each wannabe developer: a Rick & Morty Website.
+                        I received a Figma Designed and created this project from scratch, using HTML5, CSS3, JS and, of
+                        course, the Rick and Morty APi.
+                        <span><a id="pAExpe" href="./r&m.html">Let’s go! </a></span> 
+                    </p>
+                </div>
+
+                <div class="small-box">
+                    <div class="flex-smallbox">
+                        <div class="divExpe">
+                            <p class="titlEpExpe">From administrator to developer</p>
+                        </div>
+                    </div>
+                    <p class="pExpe">
+                        Business administrator in the process of changing career to software developer. I put my best in
+                        everything I do. I am energic, proactive, recursive, responsible, empathic, detail oriented and
+                        I work very well in a team. If you hire me, you will never regret it.
+                    </p>
+                </div>
+            </section>
     </main>
     <footer>
         <div>
             <span id="miNombreAmarilloAbajo"> Lina Herrera.</span>
-            <span>Software development Student</span>
+            <div id="letraBlanca">Software development Student</div>
         </div>
         <div>
             <span Class="TitulosAbajo">Useful Links</span>
@@ -76,15 +113,16 @@
             </ul>   
         </div>
         <div>
-            <span class= "tituloHire">  Hire Me </span>
-            <span class="enBloque">Enter your email to get my portafolio and CV.</span>
+            <div id="letraBlanca" class= "tituloHire">  Hire Me </div>
+            <div id="letraBlanca" class="enBloque">Enter your email to get my portafolio and CV.</div>
             <br>
             <form action="/enviar-cv">
                 <input  id= "inputFoot" class="form" type="text" placeholder="Your email address">
                 <button id= "buttonFoot" class="send" type="submit"><img src="./img/Vector.svg"></button>
             </form>  
         </div>
-        <script src="./dark_light.js"></script>
     </footer>
+    <script src="./dark_light.js"></script>
 </body>
+
 </html>

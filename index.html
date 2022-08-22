@@ -30,14 +30,14 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button>DARK O LIGHT</button>
+        <button id="botonMando">DARK O LIGHT</button>
     </header>
     <main>
-        <script>
+        <!-- <script>
             let texto="Hi, Welcome!"
             const hablar=(texto)=>speechSynthesis.speak(new SpeechSynthesisUtterance(texto));
             hablar(texto);
-        </script>
+        </script> -->
         <h2>Hi, I am <span id="miNombreAmarillo">Lina M Herrera👋</span></h2>
         <h1>Software development student</h1>
         <h4>I will do my best all time</h4>
@@ -61,11 +61,11 @@
             <span>Happy Clients</span>
         </div>
     </section>
-
+    <script src="./dark_light.js"></script>
     <footer>
         <div>
             <span id="miNombreAmarilloAbajo"> Lina Herrera.</span>
-            <span>Software development Student</span>
+            <div id="letraBlanca">Software development Student</div>
         </div>
         <div>
             <span Class="TitulosAbajo">Useful Links</span>
@@ -85,8 +85,8 @@
             </ul>   
         </div>
         <div>
-            <span class= "tituloHire">  Hire Me </span>
-            <span class="enBloque">Enter your email to get my portafolio and CV.</span>
+            <div id="letraBlanca" class= "tituloHire">  Hire Me </div>
+            <div id="letraBlanca" class="enBloque">Enter your email to get my portafolio and CV.</div>
             <br>
             <form action="/enviar-cv">
                 <input  id= "inputFoot" class="form" type="text" placeholder="Your email address">
@@ -94,7 +94,7 @@
             </form>  
         </div>
     </footer>
-    <script src="./main.js"></script>
+    <script src="./dark_light.js"></script>
 </body>
 
 </html>

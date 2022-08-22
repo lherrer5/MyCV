@@ -9,4 +9,17 @@ function cambioColor(){
     //indicar en variables cada elemnto que voy a cambiar en el click
     let body= document.querySelector("body");
     body.classList.toggle("bodyLight");//nombre de cada clase lights
+
+    let titles= document.querySelectorAll("#letraBlanca")
+    titles.classList.toggle("titlesLight");
+
+    let cajaexperiencia = document.querySelectorAll('.small-box')
+    cajaexperiencia.forEach(element => {
+        element.classList.toggle('change-mode-small-box')
+    });
+    
+    let letrasnav = document.querySelectorAll('a')
+    letrasnav.forEach(element => {
+        element.classList.toggle('change-mode-a')
+    }); 
 }

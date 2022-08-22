@@ -30,7 +30,7 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <button>DARK O LIGHT</button>
+        <button id="botonMando">DARK O LIGHT</button>
     </header>
 
     <main class="mainAbout">
@@ -45,11 +45,10 @@
             <button class="aboutButton">Hire me</button>
         </section>
     </main>
-
     <footer>
         <div>
             <span id="miNombreAmarilloAbajo"> Lina Herrera.</span>
-            <span>Software development Student</span>
+            <div id="letraBlanca">Software development Student</div>
         </div>
         <div>
             <span Class="TitulosAbajo">Useful Links</span>
@@ -69,16 +68,16 @@
             </ul>   
         </div>
         <div>
-            <span class= "tituloHire">  Hire Me </span>
-            <span class="enBloque">Enter your email to get my portafolio and CV.</span>
+            <div id="letraBlanca" class= "tituloHire">  Hire Me </div>
+            <div id="letraBlanca" class="enBloque">Enter your email to get my portafolio and CV.</div>
             <br>
             <form action="/enviar-cv">
                 <input  id= "inputFoot" class="form" type="text" placeholder="Your email address">
                 <button id= "buttonFoot" class="send" type="submit"><img src="./img/Vector.svg"></button>
             </form>  
         </div>
-
     </footer>
+    <script src="./dark_light.js"></script>
 </body>
 
 </html>
