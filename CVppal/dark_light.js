@@ -13,24 +13,34 @@ function cambioColor(){
     let titles= document.querySelector("#letraBlanca");
     titles.classList.toggle("titlesLight");
 
-    let fondoBoton= document.querySelector(".titleAbout")
-    fondoBoton.classList.toggle("titleALight");
+    // let fondoBoton= document.querySelector(".titleAbout")
+    // fondoBoton.classList.toggle("titleALight");
 
-    let fondoBoton1= document.querySelector("#contacto")
-    fondoBoton1.classList.toggle("titleALight1");
+    // let fondoBoton1= document.querySelector("#contacto")
+    // fondoBoton1.classList.toggle("titleALight1");
 
-    let casillaForm = document.querySelector('#name')
-    casillaForm.classList.toggle('change-mode-casillas')
+    // let casillaForm = document.querySelector('#name')
+    // casillaForm.classList.toggle('change-mode-casillas')
 
     let cajaexperiencia = document.querySelectorAll('.small-box')
     cajaexperiencia.forEach(element => {
         element.classList.toggle('change-mode-small-box')
     });
 
-    let linkNav= document.querySelectorAll('.linksNav')
-    linkNav.forEach(element1 => {
-        element1.classList.toggle('change-mode-linksNav')
-    }); 
+    let cajasExpe = document.querySelectorAll('.titlEpExpe')
+    cajasExpe.forEach(element => {
+        element.classList.toggle('change-mode-titlEpExpe')
+    });
+
+    let cajasExpe1 = document.querySelectorAll('.pExpe')
+    cajasExpe1.forEach(element => {
+        element.classList.toggle('change-mode-titlEpExpe')
+    });
+
+    // let linkNav= document.querySelectorAll('.linksNav')
+    // linkNav.forEach(element1 => {
+    //     element1.classList.toggle('change-mode-linksNav')
+    // }); 
 
     let letrasnav = document.querySelectorAll('.a')
     letrasnav.forEach(element2 => {

@@ -188,7 +188,7 @@ footer li {
 
 .form {
   border-radius: 30px;
-  border: opx;
+  border: 0px;
   font-family: "Poppins";
   font-weight: 500;
   font-size: 20px;
@@ -316,7 +316,6 @@ p {
 }
 
 .titlEpExpe{
-  background-color: white;
   color: black;
   font-family: "Poppins";
   font-size: 25px;
@@ -327,7 +326,6 @@ p {
 }
 
 .pExpe{
-  background-color: white;
   color: black;
   font-family: "Poppins";
   font-size: 20px;
@@ -510,4 +508,8 @@ footer input::placeholder{
 .change-mode-casillas{
   background-color: white;
   color: black;
+}
+
+.change-mode-titlEpExpe{
+  color:  white;
 }
