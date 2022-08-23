@@ -13,3 +13,9 @@ const obtenerChistes = async () => {
 }
 
 obtenerChistes();
+
+// fetch("https://api.dadjokes.io/api/random/joke")
+// .then(res=>res.json())
+// .then(data=>{
+//     console.log(data)
+// })

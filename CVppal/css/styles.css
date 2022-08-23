@@ -38,14 +38,14 @@ a {
   color: orange;
 }
 
-a:visited, 
+/* a:visited, 
 a:link {
   color: white;
-}
+} 
 
 a:hover {
   color: #ffb742;
-}
+} */
 
 body button {
   margin: 10px;
@@ -66,6 +66,7 @@ body button {
   height: 90px;
   width: 1000px;
   margin: 24px;
+  border-radius: 15px;
 }
 
 main {
@@ -246,7 +247,7 @@ p {
   font-family: "Poppins";
   font-style: bold;
   font-size: 18px;
-  background-color: #292b2e;
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 6px 25px;
   gap: 10px;
   position: absolute;
@@ -262,7 +263,7 @@ p {
   font-family: "Poppins";
   font-style: bold;
   font-size: 18px;
-  background-color: #292b2e;
+  background-color: rgba(255, 255, 255, 0.08);
   padding: 10px 5px;
   width: 141px;
   height: 30px;
@@ -335,9 +336,6 @@ p {
   padding: 1%;
 }
 
-.datosContact {
-  display: flex;
-}
 .sendContact{
   font-size: 20px;
 }
@@ -383,22 +381,10 @@ footer input::placeholder{
   color: white;
 }
 
-/* .mainCont {
-  padding: 50px;
-  margin: 30px;
-} */
-
-/* DE ANDRES */
-/* .form input {
-  border-radius: 50px;
-  height: 50px;
-  margin: 10px;
-} */
-
-.contacto {
+#contacto {
   color: #ffb742;
   border-radius: 50px;
-  background-color: #45423d;
+  background-color: rgba(255, 255, 255, 0.08);
   display: inline-block;
   margin: 0px;
   padding-top: 10px;
@@ -416,15 +402,6 @@ footer input::placeholder{
   border-radius: 10px;
   text-align: center;
 }
-/* .contenedordelform {
-  margin-top: 6em;
-  display: grid;
-  row-gap: 200px;
-}
-
-.grupoform {
-  position: relative;
-} */
 
 .sectionChiste {
   background-color: #ffffff;
@@ -451,34 +428,45 @@ footer input::placeholder{
   margin-bottom: 50px;
 }
 
-/* .forminput {
-  width: 100%;
-  background: none;
-  color: #ffffff;
-  font-size: 2em;
-  padding: 0.6em 0.3;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #7b7b7b;
-  font-family: "Roboto", sans-serif;
-} */
-
-
-/* .formenviar {
-  border-radius: 50px;
-  padding: 12px;
-  background-color: #ffb742;
-  display: inline-block;
-  margin: 0px;
-  width: 120px;
-  height: 60px;
-  font-size: 2rem;
+#casillas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.formulario .contenedordelform .grupoform ::placeholder{
-  color: #ffffff;
-} */
+#name {
+  width: 510px;
+  height: 80px;
+  background-color: #212529;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #676767;
+  outline: none;
 
+}
+
+#email {
+  width: 510px;
+  height: 80px;
+  background-color: #212529;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #676767;
+  outline: none;
+}
+
+#phone {
+  width: 510px;
+  height: 80px;
+  background-color: #212529;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-bottom: 1px solid #676767;
+  outline: none;
+}
 /* estilos light mode */
 
 .bodyLight {
@@ -502,7 +490,24 @@ footer input::placeholder{
   margin: 10px;
 }
 
-.change-mode-a{
+.change-mode-linksNav{
   text-decoration: none;
+  color: black;
+}
+
+.change-mode-a{
+    text-decoration: none;
+    color: black;
+}
+
+.titleALight{
+  background-color: gray;
+}
+.titleALight1{
+  background-color: gray;
+}
+
+.change-mode-casillas{
+  background-color: white;
   color: black;
 }
