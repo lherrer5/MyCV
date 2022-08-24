@@ -41,11 +41,11 @@ a {
 /* a:visited, 
 a:link {
   color: white;
-} 
+}  */
 
 a:hover {
   color: #ffb742;
-} */
+}
 
 body button {
   margin: 10px;
@@ -271,6 +271,22 @@ p {
   margin-bottom: 50px;
   align-items: center;
 }
+
+.titleCont{
+    border-radius: 50px;
+    color: #ffb742;
+    font-family: "Poppins";
+    font-style: bold;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 10px 5px;
+    width: 141px;
+    height: 30px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
 
 #mainExpe {
   font-family: "Inter";
@@ -501,9 +517,6 @@ footer input::placeholder{
 .titleALight{
   background-color: gray;
 }
-.titleALight1{
-  background-color: gray;
-}
 
 .change-mode-casillas{
   background-color: white;
@@ -512,4 +525,8 @@ footer input::placeholder{
 
 .change-mode-titlEpExpe{
   color:  white;
+}
+
+.change-logo{
+  src: url("./img/WWCode_Medellin_White 1.png") ;
 }

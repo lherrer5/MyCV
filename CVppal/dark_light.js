@@ -13,14 +13,14 @@ function cambioColor(){
     let titles= document.querySelector("#letraBlanca");
     titles.classList.toggle("titlesLight");
 
-    // let fondoBoton= document.querySelector(".titleAbout")
+    // let fondoBoton= document.querySelector(".titleCont")
     // fondoBoton.classList.toggle("titleALight");
 
     // let fondoBoton1= document.querySelector("#contacto")
-    // fondoBoton1.classList.toggle("titleALight1");
+    // fondoBoton1.classList.toggle("titleALight");
 
-    // let casillaForm = document.querySelector('#name')
-    // casillaForm.classList.toggle('change-mode-casillas')
+    // let fondoBoton2= document.querySelector(".titleExpe")
+    // fondoBoton2.classList.toggle("titleALight");
 
     let cajaexperiencia = document.querySelectorAll('.small-box')
     cajaexperiencia.forEach(element => {
@@ -37,13 +37,17 @@ function cambioColor(){
         element.classList.toggle('change-mode-titlEpExpe')
     });
 
-    // let linkNav= document.querySelectorAll('.linksNav')
-    // linkNav.forEach(element1 => {
-    //     element1.classList.toggle('change-mode-linksNav')
-    // }); 
-
     let letrasnav = document.querySelectorAll('.a')
     letrasnav.forEach(element2 => {
-        element2.classList.toggle('change-mode-a')
+        element2.classList.toggle('change-mode-a')  
     }); 
+
+    let logowwc = document.querySelectorAll('.logoExpe').src="./img/WWCode_Medellin_Black 3.png"
+    logowwc.forEach(element2 => {
+        element2.classList.toggle('change-logo')  
+    });
+
 }
+
+// let casillaForm = document.getElementById('#name')
+//     casillaForm.classList.toggle('change-mode-casillas')
