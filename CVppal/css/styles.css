@@ -193,7 +193,7 @@ footer li {
   font-weight: 500;
   font-size: 20px;
   line-height: 36px;
-  background-color: #292b2e;
+  /* background-color: #292b2e; */
   border-color: none;
 }
 
@@ -267,7 +267,7 @@ p {
   padding: 10px 5px;
   width: 141px;
   height: 30px;
-  margin-left: 900px;
+  margin-left: 650px;
   margin-bottom: 50px;
   align-items: center;
 }
@@ -326,6 +326,14 @@ p {
   margin: 0%;
   padding-left: 200px;
 }
+
+#logoExpe1{
+  width: 100px;
+  height: 70px;
+  margin: 0%;
+  padding-left: 200px;
+}
+
 .divExpe {
   display: flex;
   justify-content: space-between;
@@ -528,5 +536,5 @@ footer input::placeholder{
 }
 
 .change-logo{
-  src: url("./img/WWCode_Medellin_White 1.png") ;
+  content: url("./img/WWCode_Medellin_White 1.png") ;
 }

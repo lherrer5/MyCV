@@ -13,15 +13,6 @@ function cambioColor(){
     let titles= document.querySelector("#letraBlanca");
     titles.classList.toggle("titlesLight");
 
-    // let fondoBoton= document.querySelector(".titleAbout")
-    // fondoBoton.classList.toggle("titleALight");
-
-    // let fondoBoton1= document.querySelector("#contacto")
-    // fondoBoton1.classList.toggle("titleALight");
-
-    // let fondoBoton2= document.querySelector(".titleExpe")
-    // fondoBoton2.classList.toggle("titleALight");
-
     let cajaexperiencia = document.querySelectorAll('.small-box')
     cajaexperiencia.forEach(element => {
         element.classList.toggle('change-mode-small-box')
@@ -41,14 +32,40 @@ function cambioColor(){
     letrasnav.forEach(element2 => {
         element2.classList.toggle('change-mode-a')  
     }); 
-    //document.getElementById("logoExpe1").src="./img/WWCode_Medellin_White 1.png";
-    // let logowwc = document.querySelectorAll('.logoExpe').src="./img/WWCode_Medellin_Black 3.png"
-    // logowwc.forEach(element2 => {
-    //     element2.classList.toggle('change-logo')  
-    // });
-    // let as= document.getElementById("logoExpe1");
-    //     as.classList.toggle("change-logo")
+    let logo= document.getElementById("logoExpe").setAttribute("src","logowwCode");
+    logo.classList.toggle("change-logo")
+
+    let casillaForm = document.getElementById('name')
+    casillaForm.classList.toggle('change-mode-casillas')
 }
 
-// let casillaForm = document.getElementById('#name')
-//     casillaForm.classList.toggle('change-mode-casillas')
+
+
+
+
+
+ // let fondoBoton= document.querySelector(".titleAbout")
+    // fondoBoton.classList.toggle("titleALight");
+
+    // let fondoBoton1= document.querySelector("#contacto")
+    // fondoBoton1.classList.toggle("titleALight");
+
+    // let fondoBoton2= document.querySelector(".titleExpe")
+    // fondoBoton2.classList.toggle("titleALight");
+
+
+
+
+  // document.getElementById("logoExpe").src="./img/WWCode_Medellin_White 1.png";
+    // document.getElementById("logoExpe1").src="./img/WWCode_Medellin_White 1.png";
+
+
+
+    // let logowwc = document.querySelectorAll('#logoExpe')
+    // logowwc.forEach(element => {
+    //     element.classList.toggle('change-logo')  
+    // });
+    // let as= document.getElementById("logoExpe").src="./img/WWCode_Medellin_White 1.png"
+    //     as.classList.toggle("change-logo")
+
+

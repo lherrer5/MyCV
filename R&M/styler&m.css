@@ -1,8 +1,8 @@
-body{
+body {
     background-color: #72C7D0;
 }
 
-.headerFlex{
+.headerFlex {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid rgb(46, 9, 130); */
@@ -10,7 +10,7 @@ body{
     height: 90px;
 }
 
-#pHeader{
+#pHeader {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -20,7 +20,7 @@ body{
     padding: 5px 20px;
 }
 
-#botonAboutRM{
+#botonAboutRM {
     margin: 18px;
     margin-right: 70px;
     font-weight: bold;
@@ -38,15 +38,15 @@ body{
     cursor: pointer;
 }
 
-.div1{
+.div1 {
     display: flex;
     flex-direction: row;
     background-color: white;
     /* border: 1px solid rgb(12, 106, 13); */
 }
 
-#titleMainRM{
-    position:relative;
+#titleMainRM {
+    position: relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -56,24 +56,24 @@ body{
     padding: auto;
 }
 
-#pMainRM{
-position: relative;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-color: #233160;
-padding: auto;
+#pMainRM {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #233160;
+    padding: auto;
 }
 
-.div2{
+.div2 {
     display: flex;
     justify-content: space-between;
     background-color: #96C96A;
     /* border: 1px solid red; */
 }
 
-#listaRM{
+#listaRM {
     display: flex;
     font-size: 22px;
     cursor: pointer;
@@ -99,33 +99,33 @@ a {
     color: white;
 }
 
-a:visited, 
+a:visited,
 a:link {
-color: white;
-} 
+    color: white;
+}
 
-#aButton{
+#aButton {
     color: #233160;
 }
 
-#aButton:visited, 
+#aButton:visited,
 #aButton:link {
-color: #233160;
+    color: #233160;
 }
 
-.div3{
-background-color: #72C7D0;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 39px;
-text-align: center;
-color: #FFFFFF;
-height: 180px;
-padding: auto;
-position:relative;
-text-align: center;
+.div3 {
+    background-color: #72C7D0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 180px;
+    padding: auto;
+    position: relative;
+    text-align: center;
 }
 
 /* etiquetas del footer */
@@ -167,7 +167,7 @@ footer li {
     padding-bottom: 20px;
 }
 
-#letraBlanca{
+#letraBlanca {
     color: white;
     font-family: "Poppins";
     font-size: 19px;
@@ -191,4 +191,85 @@ footer li {
     line-height: 32px;
     padding-right: 400px;
     margin-right: 100px;
+}
+
+/* cuadros */
+
+.flex {
+    display: flex;
+    height: 400px;
+}
+
+.card {
+    background-color: #D7F2F2;
+    width: 250px;
+    height: 350px;
+    border-radius: 5%;
+}
+
+.card-header {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.card-body-p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    color: #233160;
+}
+
+.card-body-img {
+    border: 5px solid white;
+    border-radius: 5%;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    padding: 3%;
+    margin: 3%;
+}
+
+.generos {
+    background-color: #96C96A;
+    color: white;
+    border-radius: 10%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+}
+
+.card-body-status {
+    color: #233160;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    width: 80px;
+    height: 5px;
+    text-align: center;
+}
+
+.card-body-species {
+    color: #233160;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    width: 80px;
+    height: 5px;
+    text-align: center;
 }
