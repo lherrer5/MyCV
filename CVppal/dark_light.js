@@ -13,7 +13,7 @@ function cambioColor(){
     let titles= document.querySelector("#letraBlanca");
     titles.classList.toggle("titlesLight");
 
-    // let fondoBoton= document.querySelector(".titleCont")
+    // let fondoBoton= document.querySelector(".titleAbout")
     // fondoBoton.classList.toggle("titleALight");
 
     // let fondoBoton1= document.querySelector("#contacto")
@@ -41,12 +41,13 @@ function cambioColor(){
     letrasnav.forEach(element2 => {
         element2.classList.toggle('change-mode-a')  
     }); 
-
-    let logowwc = document.querySelectorAll('.logoExpe').src="./img/WWCode_Medellin_Black 3.png"
-    logowwc.forEach(element2 => {
-        element2.classList.toggle('change-logo')  
-    });
-
+    //document.getElementById("logoExpe1").src="./img/WWCode_Medellin_White 1.png";
+    // let logowwc = document.querySelectorAll('.logoExpe').src="./img/WWCode_Medellin_Black 3.png"
+    // logowwc.forEach(element2 => {
+    //     element2.classList.toggle('change-logo')  
+    // });
+    // let as= document.getElementById("logoExpe1");
+    //     as.classList.toggle("change-logo")
 }
 
 // let casillaForm = document.getElementById('#name')

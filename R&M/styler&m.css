@@ -46,27 +46,24 @@ body{
 }
 
 #titleMainRM{
-    position: absolute;
+    position:relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 35px;
     letter-spacing: 0.01em;
     color: #233160;
-    padding-left: 200px;
-    padding-right: 50px;
+    padding: auto;
 }
 
 #pMainRM{
-position: absolute;
+position: relative;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 25px;
 color: #233160;
-padding-top: 90px;
-padding-left: 200px;
-padding-right: 50px;
+padding: auto;
 }
 
 .div2{
@@ -126,8 +123,9 @@ line-height: 39px;
 text-align: center;
 color: #FFFFFF;
 height: 180px;
-padding: 120px 700px 15px 700px;
-/* border: 1px solid rgb(12, 106, 13); */
+padding: auto;
+position:relative;
+text-align: center;
 }
 
 /* etiquetas del footer */

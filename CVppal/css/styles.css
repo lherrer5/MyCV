@@ -421,7 +421,7 @@ footer input::placeholder{
   background-color: #ffffff;
   color: #212529;
   border-radius: 5px;
-  height: 100px;
+  height: 200px;
   width: 450px;
   padding: 15px;
   margin: 35px;
@@ -431,7 +431,7 @@ footer input::placeholder{
   font-weight: 30px;
   padding-right: 0px;
   margin-right: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .unomas{
   background-color: #ffb742;
