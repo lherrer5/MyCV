@@ -29,7 +29,8 @@ function chistesAleatorios() {
         .then(data => {
             document.getElementById("chiste").textContent = data.body[0].setup
             document.getElementById("respuesta").textContent = data.body[0].punchline
-        }).catch(error => {
-            document.getElementById("chiste").textContent = "Plop Lol"
-        })
+        }).catch(error =>console.log(error))
+        // (error => {
+        //     document.getElementById("chiste").textContent = "Plop Lol"
+        // })
 } 
