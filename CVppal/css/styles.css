@@ -288,7 +288,7 @@ p {
 }
 
 
-#mainExpe {
+.mainExpe {
   font-family: "Inter";
   display: flex;
   flex-direction: column;
@@ -327,7 +327,7 @@ p {
   padding-left: 200px;
 }
 
-#logoExpe1{
+.logoExpe1{
   width: 100px;
   height: 70px;
   margin: 0%;
@@ -403,7 +403,7 @@ footer input::placeholder{
   color: white;
 }
 
-#contacto {
+.contacto {
   color: #ffb742;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.08);
@@ -450,13 +450,13 @@ footer input::placeholder{
   margin-bottom: 50px;
 }
 
-#casillas {
+.casillas {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-#name {
+.name {
   width: 510px;
   height: 80px;
   background-color: #212529;
@@ -468,7 +468,7 @@ footer input::placeholder{
 
 }
 
-#email {
+.email {
   width: 510px;
   height: 80px;
   background-color: #212529;
@@ -479,7 +479,7 @@ footer input::placeholder{
   outline: none;
 }
 
-#phone {
+.phone {
   width: 510px;
   height: 80px;
   background-color: #212529;
@@ -536,5 +536,5 @@ footer input::placeholder{
 }
 
 .change-logo{
-  content: url("./img/WWCode_Medellin_White 1.png") ;
+  content: url("../img/WWCode_Medellin_White\ 1.png");
 }

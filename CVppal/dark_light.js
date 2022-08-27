@@ -32,40 +32,23 @@ function cambioColor(){
     letrasnav.forEach(element2 => {
         element2.classList.toggle('change-mode-a')  
     }); 
-    let logo= document.getElementById("logoExpe").setAttribute("src","logowwCode");
+
+    let logo= document.querySelector(".logoExpe")
     logo.classList.toggle("change-logo")
 
-    let casillaForm = document.getElementById('name')
+    let logo2= document.querySelector(".logoExpe1")
+    logo2.classList.toggle("change-logo")
+
+    let casillaForm = document.querySelector('.email')//no funciona
     casillaForm.classList.toggle('change-mode-casillas')
+    
+    let fondoBoton= document.querySelector(".titleAbout")//no funciona
+    fondoBoton.classList.toggle("titleALight");
+
+    let fondoBoton2= document.querySelector(".contacto")//no funciona
+    fondoBoton2.classList.toggle("titleALight");
+
+    let fondoBoton3= document.querySelector(".titleCont")//no funciona
+    fondoBoton3.classList.toggle("titleALight");
 }
-
-
-
-
-
-
- // let fondoBoton= document.querySelector(".titleAbout")
-    // fondoBoton.classList.toggle("titleALight");
-
-    // let fondoBoton1= document.querySelector("#contacto")
-    // fondoBoton1.classList.toggle("titleALight");
-
-    // let fondoBoton2= document.querySelector(".titleExpe")
-    // fondoBoton2.classList.toggle("titleALight");
-
-
-
-
-  // document.getElementById("logoExpe").src="./img/WWCode_Medellin_White 1.png";
-    // document.getElementById("logoExpe1").src="./img/WWCode_Medellin_White 1.png";
-
-
-
-    // let logowwc = document.querySelectorAll('#logoExpe')
-    // logowwc.forEach(element => {
-    //     element.classList.toggle('change-logo')  
-    // });
-    // let as= document.getElementById("logoExpe").src="./img/WWCode_Medellin_White 1.png"
-    //     as.classList.toggle("change-logo")
-
 

@@ -1,25 +1,3 @@
-// window.addEventListener('DOMContentLoaded', personajes)//para esperar que se cargue el html
-
-// const bottonRM = document.getElementById("todosName");//nombre de id del boton
-
-// bottonRM.addEventListener('click', personajes)
-
-// function personajes() {
-//     const apiRM = 'https://rickandmortyapi.com/api/character';
-
-//     fetch(apiRM)
-//         .then(response => response.json())//para esperar la promesa de q m traiga los datos. y convierto el archivo de formato json a formato de objeto de js
-//         .then(dato => {
-//             document.getElementById("name1").textContent = dato.results[0].name;
-//             document.getElementById("imgRM").setAttribute("src", dato.results[0].image)
-//             }) 
-//         .catch(error => console.log(error))//me trae los errores q tenga configurada la API
-// }
-//en el parametro dato guardaré los datos recibidos. 
-//con elparametro. al q voy a acceder
-
-
-
 document.addEventListener('DOMContentLoaded', ()=>{//pa esperar que me cargue todo html y siga con func
     fetchData()
 })
