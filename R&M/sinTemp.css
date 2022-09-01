@@ -91,7 +91,7 @@ body {
     line-height: 133%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    padding: 0px 130px;
+    padding: 0px 80px;
 }
 
 a {
@@ -202,6 +202,16 @@ footer li {
     gap: 18px;
     height: auto;
     margin: 1%;
+}
+
+.flex-hijo {
+    padding: 25px 150px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight:bold;
+    font-size: 20px;
+    letter-spacing: 0.03em;
 }
 
 .card {

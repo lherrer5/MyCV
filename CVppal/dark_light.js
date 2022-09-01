@@ -34,21 +34,30 @@ function cambioColor(){
     }); 
 
     let logo= document.querySelector(".logoExpe")
+    if(logo)
     logo.classList.toggle("change-logo")
 
     let logo2= document.querySelector(".logoExpe1")
+    if(logo2)
     logo2.classList.toggle("change-logo")
 
-    let casillaForm = document.querySelector('.email')//no funciona
-    casillaForm.classList.toggle('change-mode-casillas')
+    // let casillaForm = document.querySelector('.email')//no funciona
+    // if(casillaForm)
+    // casillaForm.classList.toggle('change-mode-casillas')
     
-    let fondoBoton= document.querySelector(".titleAbout")//no funciona
+    let fondoBoton= document.querySelector(".titleAbout")//pulir
+    if(fondoBoton)
     fondoBoton.classList.toggle("titleALight");
 
-    let fondoBoton2= document.querySelector(".contacto")//no funciona
+    let fondoBoton1= document.querySelector(".titleExpe")//pulir
+    if(fondoBoton1)
+    fondoBoton1.classList.toggle("titleALight");
+
+    let fondoBoton2= document.querySelector(".contacto")//pulir
+    if(fondoBoton2)
     fondoBoton2.classList.toggle("titleALight");
 
-    let fondoBoton3= document.querySelector(".titleCont")//no funciona
+    let fondoBoton3= document.querySelector(".titleCont")//pulir
+    if(fondoBoton3)
     fondoBoton3.classList.toggle("titleALight");
 }
-

@@ -523,6 +523,21 @@ footer input::placeholder{
 }
 
 .titleALight{
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffb742;
+  font-family: "Poppins";
+  font-style: bold;
+  font-size: 18px;
+  padding: 6px 25px;
+  gap: 10px;
+  position: absolute;
+  width: 148px;
+  height: 42px;
+  left: 540px;
+  top: 100px;
   background-color: gray;
 }
 
