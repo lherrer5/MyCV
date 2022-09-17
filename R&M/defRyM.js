@@ -1,96 +1,152 @@
-let acu = 0;//pa reinicar la pag
+var pagActual = ""; //variable global para saber la busqueda que actualmente se esta realizando
+let contPage = 1; //variable global para inicializar la funcion de incremento de paginas
 
-
-window.addEventListener('DOMContentLoaded', getCharacters);//esperar q se cargue el html
-
-function getCharacters() {//inserta el texto de bienvenida
-//esta variable crea el texto con metodos
-    const div = document.createRange().createContextualFragment(`
-                    <div>
-                        <div class="flex-hijo">
-                            Choose any of the catergories above
-                            and learn more about Rick and Morty characters.
-                        </div>
-                    </div>
-                `);
-//esta variable escoge con la clase el elemnto en donde se inseratara 
-    const information = document.querySelector('.flex-hijo')
-    //este metodo hace la inserción
-    information.append(div);
-
-}
-
-//creamos variables para llamar las etiquetas boton con su ID
+//obtencion de los elementos nav del html
 const female = document.getElementById('buttonFemales');
 const male = document.getElementById('buttonMales');
 const allc = document.getElementById('buttonAll');
 const alive = document.getElementById('buttonAlive');
 const dead = document.getElementById('buttonDead');
+const next = document.querySelector('.next');
+const previous = document.querySelector('.previous');
 
-//creo el evento click para cada variable y la funcion para q llame los personajes segun el filtro de la parte final d la url
+//evento que escucha cuando se oprime el boton next y envia el jquery a la funcion info()
+//el + es un parametro para que la funcion changePage sepa que tiene que aumentar las paginas
+next.addEventListener('click', () => {
+    contPage=contPage+1;
+    if (pagActual == "female") {
+        info('Female', '', contPage)//paso a la funcion info los parametros de gender y change page
+    } else if (pagActual == "male") {
+        info('Male', '', contPage)//paso a la funcion info los parametros de gender y change page
+    } else if (pagActual == "dead") {
+        info('', 'Dead', contPage)//paso a la funcion info los parametros de status y change page
+    } else if (pagActual == "alive") {
+        info('', 'Alive', contPage)//paso a la funcion info los parametros de status y change page
+    } else if (pagActual == "allc") {
+        info('', '', contPage)//solo paso changePage para q muestre todos los personajes
+    }
+})
+
+//evento que escucha cuando se oprime el boton previous y envia el jquery a la funcion info()
+//el - es un parametro para que la funcion changePage sepa que tiene que disminuir las paginas
+previous.addEventListener('click', () => {
+    contPage=contPage-1;
+    if (pagActual == "female") {
+        info('Female', '', contPage)
+    } else if (pagActual == "male") {
+        info('Male', '', contPage)
+    } else if (pagActual == "dead") {
+        info('', 'Dead', contPage)
+    } else if (pagActual == "alive") {
+        info('', 'Alive', contPage)
+    } else if (pagActual == "allc") {
+        info('', '', contPage)
+    }
+})
+
+
+//Evento que escucha cuando se oprime el boton de busqueda.
+//Se le asigna el valor a la variable pagActual dependiando el boton de busqueda seleccionado 
 female.addEventListener('click', function () {
-    
-    info('https://rickandmortyapi.com/api/character/?gender=Female');//hace llamado a funcion info para inserta los personajes
-    borrar()//hace llamado a funcion borrar para eliminar el contenido de bienvenida
+    pagActual = "female"
+    contPage = 1;
+    info('Female', '', '');
 });
 
 
 male.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?gender=Male');
-    borrar()
+    pagActual = "male"
+    contPage = 1;
+    info('Male', '', '');
 });
 
 alive.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?status=Alive');
-    borrar()
+    pagActual = "alive"
+    contPage = 1;
+    info('', 'Alive', '');
 });
 
 dead.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character/?status=Dead');
-    borrar()
+    pagActual = "dead"
+    contPage = 1;
+    info('', 'Dead', '');
 });
 
 allc.addEventListener('click', function () {
-    info('https://rickandmortyapi.com/api/character');
-    borrar()
+    pagActual = "allc"
+    contPage = 1;
+    info('', '', '');
 });
 
+//funcion para consumir la API e insertar los datos al HTML
+function info(gender, status, changePage) {
+    //concateno los parametros q necesito con marcadores de posicion $[{} y uso plantillas literales encerradas por el carácter ``
+    const api = `https://rickandmortyapi.com/api/character/?gender=${gender}&status=${status}&page=${changePage}`;
 
-function info(url) {
-    fetch(url)
-        .then(response => response.json())
+    //Reseatar botones cuando se busca para que si llego a la ultima y tengo next desabilitado, al darle previous se m vuelva a activar
+    next.classList.remove("contenedorbotones");
+    previous.classList.remove("contenedorbotones");
+
+    fetch(api)
+        .then(response => response.json())//recibo mi respuesta en formato .json
         .then(data => {
-            data.results.forEach(cartoon => {//me trae los resultados d la api segun la cantidad de elementos d la api
-//la const div m crea la tarjeta con la info pa cada elemento
+
+            if (data.info.pages == changePage) {
+                //Ultima pagina
+                alert("ultima ´pagina");
+                
+                next.classList.add("contenedorbotones")
+            }
+
+            if (changePage === 1) previous.classList.add("contenedorbotones")
+
+            data.results.forEach(personaje => {//empiezo a manipular los dato recibidos, con la key results
+
                 const div = document.createRange().createContextualFragment(`
                 <article class="card">
                 <div class="image-container">
-                    <h2 class="card-body-p">${cartoon.name}</h2>
-                    <img src="${cartoon.image}" alt="personaje" class="card-body-img">
-                    <p class="generos">${cartoon.gender}</p>
-                    <span class="card-body-status">${cartoon.status}</span>
-                    <span class="card-body-species">${cartoon.species}</span>
+                    <h2 class="card-body-p">${personaje.name}</h2>
+                    <img src="${personaje.image}" alt="personaje" class="card-body-img">
+                    <p class="generos">${personaje.gender}</p>
+                    <span class="card-body-status">${personaje.status}</span>
+                    <span class="card-body-species">${personaje.species}</span>
                 </div>
             </article>
+
                     `);
-//esta const selecciona mi elemento htlm con la clase flex para hacer el append d la const div
-                const information = document.querySelector('.flex')
-                acu = acu + 1;//da la vuelta en el forEach hasta llegar al ultimo elemento
+//esta const information selecciona mi elemento htlm con la clase mainPadre para hacer el append d la const div
+                const information = document.querySelector('.mainPadre')
                 information.append(div);
             });
 
+
         }).catch(error =>console.log(error))
-//con este for recorro todas las tarjetas creadas y las elimino cuando se hace click
-    for (let i = 0; i < acu; i++) {
-        const padre = document.querySelector('.flex')
-        const hijo = document.querySelector('.card')
-        padre.removeChild(hijo)//llamo al padre y al hio, para borrar todos los articles
-    }
+        //llamo a funcion borrar para eliminar contenido anterior e insertar lo nuevo
+        
+    removeCards(); //borra las cartas anteriores
+    //crea la clase activeButtons reemplazando la contenedorbotones para q aparezca next y previous
+    let buttons = document.querySelector('.contenedorbotones')
+    buttons.classList.add('activeButtons')
 }
 
 
-function borrar(){
-    const padre = document.querySelector('.flex')
-        const hijo = document.querySelector('.card')
-        padre.removeChild(hijo)
+function removeCards() {
+    const cards = document.querySelector('.mainPadre').innerHTML = "";
+}
+
+
+//Funcion que se encarga de incrementar o decrementar las paginas segun el parametro que le pase
+function changePage(operador) {
+    num = contPage;
+
+    if (operador == '+') {
+        num = num + 1;
+        contPage = num;
+        return num
+    } else if (operador == '-') {
+        if (num <= 1) { num = 2;} //condicional para que el valor del contador no se dismunuya mas de 2 cuando se oprime previous 
+        num = num - 1;
+        contPage = num;
+        return num
+    }
 }
